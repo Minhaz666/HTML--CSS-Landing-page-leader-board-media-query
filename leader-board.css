@@ -1,0 +1,180 @@
+.main
+{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.container
+{
+    background-color: #F3F1FF;
+    padding: 30px;
+    height: 670px;
+    width: 689px;
+    
+    
+}
+
+.body
+{
+    margin: 20px;
+    background-color: #E5E5E5;
+}
+
+.sec-tit
+{
+    margin-top: 3px;
+    color: blue;
+    font-size: 24px;
+}
+
+.row-design
+{
+    border: solid 2px gray;
+    margin-top: 30px;
+}
+
+
+
+/* TOP PLAYER */
+.top-player
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+
+
+.player 
+{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;   
+}
+.player img
+{
+    width: 50px;
+}
+.player-name
+{
+    padding-left: 16px;
+    font-size: 18px;
+}
+
+
+/* TOP BLOGS */
+
+.top-blogs
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-row-gap: 17px; 
+}
+.thumbnail img
+{
+width: 150px;
+}
+.blog
+{
+display: flex;
+}
+.blog-info
+{
+    margin-left: 10px;
+}
+.blog-title
+{
+    font-size: 15px;
+}
+.blog-author a
+{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+/*...............
+ LATE COURSE 
+ ................*/
+.container-course
+{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+ .late-course
+ {
+     margin-top: 30px;
+     height: 400px;
+     width: 750px;
+     background-color: aliceblue;
+    
+ }
+ .courses
+ {
+     margin-top: 30px;
+     margin-left: 30px;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 25px;
+     height: 300px;
+     width: 300px;
+    
+
+ }
+ .course-image img
+ {
+     width: 200px;
+ }
+ .caurse-author a
+ {
+     text-decoration: none;
+     color: red;
+     
+ }
+ .course-info
+ {
+     display: flex;
+     justify-content: space-between;
+ }
+  .marked
+ {
+     color: red;
+
+ }
+ 
+ .fa-star
+ {
+     color: burlywood;
+     font-size: 12px;
+     
+ }
+ .fa-clock
+ {
+     color: red;
+     font-size: 12px;
+ }
+
+
+@media  (min-height:820px) and (max-width:1180px)
+{
+    
+/* TOP PLAYER */
+.top-player 
+{
+    
+    grid-template-columns: repeat(1,1fr);
+}
+.top-blogs
+{
+    grid-template-columns: repeat(1,1fr);
+}
+.courses
+{
+grid-template-columns: repeat(1,1fr);
+}
+}
